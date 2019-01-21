@@ -34,8 +34,8 @@ GfddRAD1_005_ATCACG_L007_R1_009.fastq.gz  GfddRAD1_005_ATCACG_L007_R1_009.fastq.
 <pre><code>% process_radtags -P -p ./raw -b ./barcodes/barcodes -o ./samples/ \ 
                   -c -q -r --inline_index --renz_1 nlaIII --renz_2 mluCI
 </code></pre>
-<p><strong>The output of process_radtags</strong><br>
-The output of the <strong>process_radtags</strong> differs depending if you are processing single-end or paired-end data. In the case of  <em>single-end reads</em>, the program will output one file per barcode into the output directory you specify. If the data do not have barcodes, then the file will retain its original name.</p>
+<p><strong>The output of process_radtags</strong></p>
+<p>The output of the <strong>process_radtags</strong> differs depending if you are processing single-end or paired-end data. In the case of  <em>single-end reads</em>, the program will output one file per barcode into the output directory you specify. If the data do not have barcodes, then the file will retain its original name.</p>
 <p>If you are processing <em>paired-end reads</em>, then you will get four files per barcode, two for the single-end read and two for the paired-end read. For example, given barcode ACTCG, you would see the following four files:</p>
 <pre><code>sample_ACTCG.1.fq
 sample_ACTCG.rem.1.fq
