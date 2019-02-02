@@ -1,0 +1,17 @@
+
+#Bajar datos de NCBI
+curl -s 
+
+## Este script baja 5 secuencias de Rhopalocera de NCBI
+# Crear directorio para guardar datos
+mkdir Rhopa
+
+# Bajar datos de NCBI 
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=201066588,201066584,201066582,201066580,201066578" > mariposas.fasta
+
+# Revisar qué secuencias se bajaron
+grep ">" mariposas.fasta
+
+## Repetición de TGCA ###
+grep -c "TGCA" mariposas.fasta
+
